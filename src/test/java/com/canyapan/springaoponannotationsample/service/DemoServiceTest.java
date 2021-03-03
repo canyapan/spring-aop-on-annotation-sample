@@ -26,6 +26,8 @@ class DemoServiceTest {
         service.myTargetMethod();
 
         verify(aspect).executionLogger(any());
+
+        // Output: 2021-03-03 00:15:45.596  INFO 9795 --- [    Test worker] c.c.s.aspect.CustomAnnotationAspect      : Method with the CustomAnnotation on com.canyapan.springaoponannotationsample.service.DemoService executed! took: PT0.011574S
     }
 
 }

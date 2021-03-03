@@ -13,7 +13,6 @@ import java.time.Instant;
 
 @Slf4j
 @Aspect
-@Component
 public class CustomAnnotationAspect {
 
     @Around("@annotation(com.canyapan.springaoponannotationsample.annotation.CustomAnnotation)")
