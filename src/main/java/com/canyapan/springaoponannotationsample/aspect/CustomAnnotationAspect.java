@@ -22,7 +22,9 @@ public class CustomAnnotationAspect {
 
         joinPoint.proceed();
 
-        log.info("Method with the CustomAnnotation executed! took: {}", Duration.between(start, Instant.now()));
+        log.info("Method with the CustomAnnotation on {} executed! took: {}",
+                joinPoint.getTarget().getClass().getName(),
+                Duration.between(start, Instant.now()));
     }
 
 }
